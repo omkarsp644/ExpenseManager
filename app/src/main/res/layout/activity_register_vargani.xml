@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".activity.Registervargani">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vargani"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_margin="20sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="@string/reciept_id_will_requires_only_once_when_you_first_open"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_margin="20sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:hint="@string/reciept_id"
+                android:id="@+id/recieptID"
+                android:inputType="number"
+                android:layout_weight="0.5"
+                android:layout_margin="10sp"
+                android:background="@drawable/textview"
+                android:padding="20sp"/>
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:layout_weight="0.5"
+                android:text="23/09/2021"
+                android:id="@+id/currentDate"
+                android:textSize="20sp"
+                android:layout_margin="10sp"
+                android:background="@drawable/textview"
+                android:padding="20sp"/>
+
+
+        </LinearLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/is_vargani_paid"
+            android:id="@+id/paidCheck"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:layout_margin="10sp"
+            android:checked="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:id="@+id/varganiPaidorNot"
+            android:background="@drawable/exp_backg"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="@string/date_paid"
+                android:textColor="@color/white"
+                android:layout_weight="0.5"
+                android:layout_margin="10sp"
+                android:padding="20sp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="0.5"
+                android:background="@drawable/textview"
+                android:hint="Date Paid"
+                android:padding="20sp"
+                android:textColor="@android:color/black"
+                android:text="23/09/2021"
+                android:id="@+id/datePaid"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="@string/name"
+            android:background="@drawable/textview"
+            android:padding="20sp"
+            android:layout_margin="15sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/amountPaid"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount"
+            android:inputType="number"
+            android:background="@drawable/textview"
+            android:padding="20sp"
+            android:layout_margin="15sp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="20sp"
+            android:background="@drawable/textview"
+            android:padding="10sp"
+            android:text="@string/submit"
+            android:textSize="25sp"
+            android:id="@+id/registerVargani"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="300sp"
+            app:cardElevation="30sp"
+            app:cardCornerRadius="20sp"
+            android:layout_margin="10sp"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5sp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_margin="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:queryHint="Reciept ID / Name (any one)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rec_id"
+                        android:textSize="15sp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:id="@+id/reciept_ID"
+                        android:layout_margin="5sp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payer_name"
+                        android:textSize="15sp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:maxEms="10"
+                        android:id="@+id/reciept_Name"
+                        android:layout_margin="5sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:id="@+id/reciept_Amount"
+                        android:layout_margin="5sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:id="@+id/reciept_DateCreated"
+                        android:layout_margin="5sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:text="Paiddate"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:id="@+id/reciept_paid_date"
+                        android:layout_margin="5sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:id="@+id/displayVarganiRecords"
+                    />
+
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

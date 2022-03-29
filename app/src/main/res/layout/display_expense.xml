@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/display_expense_click"
+    android:weightSum="4">
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/display_expense_date"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_margin="5sp"
+        android:text="121212"
+        android:textColor="@color/red"/>
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/display_expense_for_what"
+        android:ellipsize="end"
+        android:layout_margin="5sp"
+        android:text="dedededededed"/>
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/display_expense_amount"
+        android:layout_margin="5sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="12edeedede1212"/>
+
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/display_expense_personname"
+        android:layout_margin="5sp"
+        android:text="1215151515151151151511212"/>
+
+
+
+</LinearLayout>

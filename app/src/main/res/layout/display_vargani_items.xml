@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:id="@+id/clickItem"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="rec id"
+        android:textSize="10sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:id="@+id/reciept_ID"
+        android:layout_margin="5sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="rec id"
+        android:textSize="10sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:maxEms="10"
+        android:id="@+id/reciept_Name"
+        android:layout_margin="5sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="rec id"
+        android:textSize="10sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:id="@+id/reciept_Amount"
+        android:layout_margin="5sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="rec id"
+        android:textSize="10sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:id="@+id/reciept_date"
+        android:layout_margin="5sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="rec id"
+        android:textSize="10sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:id="@+id/reciept_datePaid"
+        android:layout_margin="5sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"/>
+</LinearLayout>
